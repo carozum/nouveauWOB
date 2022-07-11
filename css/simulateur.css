@@ -31,13 +31,14 @@
   
   /* Change background color of buttons on hover */
   .tab button:hover {
-    background-color: var(--main-color);
+    background-color: var(--secondary-color);
     color: white;
   }
   
   /* Create an active/current "tab button" class */
   .tab button.active {
-    background-color: var(--secondary-color);
+    background-color: var(--main-color);
+    color: white;
   }
   
   /* Style the tab content */
@@ -51,14 +52,14 @@
   }
  
   
-input[type=checkbox] {
+/* input[type=checkbox] {
   background-color:var(--secondary-color);
   border: none;
-}
+} */
 
-input[type=checkbox]:checked {
+/* input[type=checkbox]:checked {
   background-color:var(--main-color);
-  }
+  } */
 
 .form-check-input:focus {
   box-shadow: none;
@@ -120,7 +121,7 @@ input[type=checkbox]:checked {
 
 
 
-.quiz_checkbox:checked ~ .single_quiz_card .quiz_card_content .quiz_card_title{background-color:var(--main-color); color: #ffffff;}
+.quiz_checkbox:checked ~ .single_quiz_card .quiz_card_content .quiz_card_title{background-color:var(--secondary-color); color: #ffffff;}
 .quiz_checkbox:checked ~ .single_quiz_card .quiz_card_content .quiz_card_title h3{color: #ffffff;}
 .quiz_checkbox:checked ~ .single_quiz_card .quiz_card_content .quiz_card_title h3 i{opacity: 1;}
 

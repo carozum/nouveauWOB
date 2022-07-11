@@ -131,6 +131,12 @@ a:hover {
   background-color: var(--main-color);
 }
 
+.btn-secondary{
+  border:none;
+  background-color: var(--secondary-color);
+  color: black;
+}
+
 /*--/ Sections /--*/
 .sect-4 {
   padding: 4rem 0;
