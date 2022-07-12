@@ -39,6 +39,7 @@
                     <li class="dropdown"><a href="services.html"><span>Services</span> <i
                                 class="bi bi-chevron-down"></i></a>
                         <ul>
+                            <li><a href="services.html">Tous les services</a></li>
                             <li><a href="single-produit.html">Gestion de Projet</a></li>
                             <li><a href="single-produit.html">Web Design</a></li>
                             <li><a href="single-produit.html">Création de Sites</a></li>
@@ -66,9 +67,9 @@
                     <p class="hero-subtitle">Une Agence Web au Pays Basque</p>
 
                     <p class="pt-3"><a class="btn btn-primary btn-lg js-scroll px-4" href="#about" role="button">Estimer
-                            le Coût de votre projet</a></p>
+                            le Coût de Votre Projet</a></p>
                     <p class="pt-3"><a class="btn btn-primary btn-lg js-scroll px-4" href="#about" role="button">Nous
-                            contacter</a></p>
+                            Contacter</a></p>
                 </div>
             </div>
         </div>
@@ -100,143 +101,98 @@
                         </div>
 
                         <div class="tab shadow-lg border-0">
-                            <button class="tablinks" onclick="openPage(event, 'Projet')" id="defaultOpen">Gestion de
-                                Projet</button>
-                            <button class="tablinks" onclick="openPage(event, 'Design')">Web Design</button>
-                            <button class="tablinks" onclick="openPage(event, 'Sites')">Création Sites</button>
-                            <button class="tablinks" onclick="openPage(event, 'Pub')">E-Publicité</button>
-                            <button class="tablinks" onclick="openPage(event, 'Panier')">Panier</button>
+                            <button class="tablinks" onclick="openPage(event, 'Projet')" id="defaultOpen"
+                                style="font-size: 1rem ;">Gestion
+                                de
+                                Projet </button>
+                            <button class="tablinks" onclick="openPage(event, 'Design')" style="font-size: 1rem ;">Web
+                                Design</button>
+                            <button class="tablinks" onclick="openPage(event, 'Sites')"
+                                style="font-size: 1rem ;">Création Sites</button>
+                            <button class="tablinks" onclick="openPage(event, 'Pub')"
+                                style="font-size: 1rem ;">E-Publicité</button>
+                            <button class="tablinks" onclick="openPage(event, 'Panier')"
+                                style="font-size: 1rem ;">Panier</button>
                         </div>
 
                         <div id="Projet" class="tabcontent p-4 border-0">
-                            <p>Gestion de Projet: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-                                repellat, dolores nobis
-                                nemo vero modi, adipisci eaque ab voluptatem optio culpa delectus officia fuga, eius
-                                eligendi ipsum placeat. </p>
+                            <!-- <p>Gestion de Projet: Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> -->
                             <div class="row">
                                 <!-- produit 1 -->
-                                <div class="col-sm-6">
-                                    <div class="quiz_card_area">
-                                        <input class="quiz_checkbox" type="checkbox" id="static" value="static" />
-                                        <div class="single_quiz_card">
-                                            <div class="quiz_card_content">
-                                                <div class="quiz_card_title shadow-lg">
-                                                    <h3><i class="fa fa-check" aria-hidden="true"></i> Static web site
-                                                    </h3>
-                                                </div>
-                                            </div>
+                                <div class="col-md-6">
+                                    <div class="row px-1 my-1 my-md-4">
+                                        <div class="card py-3 py-md-4 col-8 col-md-12">
+                                            <input class="checkbox stretched-link" type="checkbox" id="static"
+                                                value="static" name="Static" />
+                                            <label for="static" class="text-center pt-1">
+                                                Static web site
+                                            </label>
                                         </div>
+                                        <p class="text-center stretched-link col-4 col-md-12 my-auto"><a
+                                                href="blog-single.html"
+                                                style="text-decoration:underline; cursor: pointer">En
+                                                savoir plus</a>
+                                        </p>
                                     </div>
                                 </div>
-                                <!-- produit 2 -->
-                                <div class="col-sm-6">
-                                    <div class="quiz_card_area">
-                                        <input class="quiz_checkbox" type="checkbox" id="specific" value="specific" />
-                                        <div class="single_quiz_card">
-                                            <div class="quiz_card_content">
-                                                <div class="quiz_card_title shadow-lg">
-                                                    <h3><i class="fa fa-check" aria-hidden="true"></i> Specific web site
-                                                    </h3>
-                                                </div>
-                                            </div>
+                                <div class="col-md-6">
+                                    <div class="row px-1 my-1 my-md-4">
+                                        <div class="card py-3 py-md-4 col-8 col-md-12">
+                                            <input class="checkbox stretched-link" type="checkbox" id="specific"
+                                                value="specific" name="specific" />
+                                            <label for="specific" class="text-center pt-1">
+                                                Specific Deployment
+                                            </label>
                                         </div>
+                                        <p class="text-center stretched-link col-4 col-md-12 my-auto"><a
+                                                href="blog-single.html"
+                                                style="text-decoration:underline; cursor: pointer">En
+                                                savoir plus</a>
+                                        </p>
                                     </div>
                                 </div>
-                                <!-- produit 3 -->
-                                <div class="col-sm-6">
-                                    <div class="quiz_card_area">
-                                        <input class="quiz_checkbox" type="checkbox" id="audit" value="audit" />
-                                        <div class="single_quiz_card">
-                                            <div class="quiz_card_content">
-                                                <div class="quiz_card_title shadow-lg">
-                                                    <h3><i class="fa fa-check" aria-hidden="true"></i> Audit
-                                                    </h3>
-                                                </div>
-
-                                            </div>
+                                <div class="col-md-6">
+                                    <div class="row px-1 my-1 my-md-4">
+                                        <div class="card py-3 py-md-4 col-8 col-md-12">
+                                            <input class="checkbox stretched-link" type="checkbox" id="audit"
+                                                value="audit" name="audit" />
+                                            <label for="audit" class="text-center pt-1">
+                                                Audit of existing website
+                                            </label>
                                         </div>
+                                        <p class="text-center stretched-link col-4 col-md-12 my-auto"><a
+                                                href="blog-single.html"
+                                                style="text-decoration:underline; cursor: pointer">En
+                                                savoir plus</a>
+                                        </p>
                                     </div>
                                 </div>
-                                <!-- produit 4 -->
-                                <div class="col-sm-6">
-                                    <div class="quiz_card_area">
-                                        <input class="quiz_checkbox" type="checkbox" id="wordpress" value="wordpress" />
-                                        <div class="single_quiz_card">
-                                            <div class="quiz_card_content">
-                                                <div class="quiz_card_title shadow-lg">
-                                                    <h3><i class="fa fa-check" aria-hidden="true"></i> Wordpress
-                                                    </h3>
-                                                </div>
-
-                                            </div>
+                                <div class="col-md-6">
+                                    <div class="row px-1 my-1 my-md-4">
+                                        <div class="card py-3 py-md-4 col-8 col-md-12">
+                                            <input class="checkbox stretched-link" type="checkbox" id="wordpress"
+                                                value="wordpress" name="wordpress" />
+                                            <label for="wordpress" class="text-center pt-1">
+                                                Wordpress website
+                                            </label>
                                         </div>
+                                        <p class="text-center stretched-link col-4 col-md-12 my-auto"><a
+                                                href="blog-single.html"
+                                                style="text-decoration:underline; cursor: pointer">En
+                                                savoir plus</a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div id="Design" class="tabcontent p-4 border-0">
-                            <p>Web Design: Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam excepturi
+                            <p>Web Design: Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                excepturi
                                 consectetur natus repellat ut, minus nihil soluta dolores consequuntur eum. </p>
                             <div class="row">
-                                <!-- produit 1 -->
-                                <div class="col-sm-6">
-                                    <div class="quiz_card_area">
-                                        <input class="quiz_checkbox" type="checkbox" id="1" value="1" />
-                                        <div class="single_quiz_card">
-                                            <div class="quiz_card_content">
-                                                <div class="quiz_card_title shadow-lg">
-                                                    <h3><i class="fa fa-check" aria-hidden="true"></i> Prod 5
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- produit 2 -->
-                                <div class="col-sm-6">
-                                    <div class="quiz_card_area">
-                                        <input class="quiz_checkbox" type="checkbox" id="1" value="1" />
-                                        <div class="single_quiz_card">
-                                            <div class="quiz_card_content">
-                                                <div class="quiz_card_title shadow-lg">
-                                                    <h3><i class="fa fa-check" aria-hidden="true"></i> Prod 6
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- produit 3 -->
-                                <div class="col-sm-6">
-                                    <div class="quiz_card_area">
-                                        <input class="quiz_checkbox" type="checkbox" id="1" value="1" />
-                                        <div class="single_quiz_card">
-                                            <div class="quiz_card_content">
-                                                <div class="quiz_card_title shadow-lg">
-                                                    <h3><i class="fa fa-check" aria-hidden="true"></i> Prod 7
-                                                    </h3>
-                                                </div>
+                                A compléter
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- produit 4 -->
-                                <div class="col-sm-6">
-                                    <div class="quiz_card_area">
-                                        <input class="quiz_checkbox" type="checkbox" id="1" value="1" />
-                                        <div class="single_quiz_card">
-                                            <div class="quiz_card_content">
-                                                <div class="quiz_card_title shadow-lg">
-                                                    <h3><i class="fa fa-check" aria-hidden="true"></i> Prod 8
-                                                    </h3>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -246,132 +202,21 @@
                                 nemo vero modi, adipisci eaque ab voluptatem optio culpa delectus officia fuga, eius
                                 eligendi ipsum placeat. </p>
                             <div class="row">
-                                <!-- produit 1 -->
-                                <div class="col-sm-6">
-                                    <div class="quiz_card_area">
-                                        <input class="quiz_checkbox" type="checkbox" id="1" value="1" />
-                                        <div class="single_quiz_card">
-                                            <div class="quiz_card_content">
-                                                <div class="quiz_card_title shadow-lg">
-                                                    <h3><i class="fa fa-check" aria-hidden="true"></i> Prod 9
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- produit 2 -->
-                                <div class="col-sm-6">
-                                    <div class="quiz_card_area">
-                                        <input class="quiz_checkbox" type="checkbox" id="1" value="1" />
-                                        <div class="single_quiz_card">
-                                            <div class="quiz_card_content">
-                                                <div class="quiz_card_title shadow-lg">
-                                                    <h3><i class="fa fa-check" aria-hidden="true"></i> Prod 10
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- produit 3 -->
-                                <div class="col-sm-6">
-                                    <div class="quiz_card_area">
-                                        <input class="quiz_checkbox" type="checkbox" id="1" value="1" />
-                                        <div class="single_quiz_card">
-                                            <div class="quiz_card_content">
-                                                <div class="quiz_card_title shadow-lg">
-                                                    <h3><i class="fa fa-check" aria-hidden="true"></i> Prod 11
-                                                    </h3>
-                                                </div>
+                                A compléter
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- produit 4 -->
-                                <div class="col-sm-6">
-                                    <div class="quiz_card_area">
-                                        <input class="quiz_checkbox" type="checkbox" id="1" value="1" />
-                                        <div class="single_quiz_card">
-                                            <div class="quiz_card_content">
-                                                <div class="quiz_card_title shadow-lg">
-                                                    <h3><i class="fa fa-check" aria-hidden="true"></i> Prod 12
-                                                    </h3>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
                         <div id="Pub" class="tabcontent p-4 border-0">
-                            <p>E-publicité: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellat,
+                            <p>E-publicité: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                                repellat,
                                 dolores
                                 nobis
                                 nemo vero modi, adipisci eaque ab voluptatem optio culpa delectus officia fuga, eius
                                 eligendi ipsum placeat. </p>
                             <div class="row">
-                                <!-- produit 1 -->
-                                <div class="col-sm-6">
-                                    <div class="quiz_card_area">
-                                        <input class="quiz_checkbox" type="checkbox" id="1" value="1" />
-                                        <div class="single_quiz_card">
-                                            <div class="quiz_card_content">
-                                                <div class="quiz_card_title shadow-lg">
-                                                    <h3><i class="fa fa-check" aria-hidden="true"></i> Prod 13
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- produit 2 -->
-                                <div class="col-sm-6">
-                                    <div class="quiz_card_area">
-                                        <input class="quiz_checkbox" type="checkbox" id="1" value="1" />
-                                        <div class="single_quiz_card">
-                                            <div class="quiz_card_content">
-                                                <div class="quiz_card_title shadow-lg">
-                                                    <h3><i class="fa fa-check" aria-hidden="true"></i> Prod 14
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- produit 3 -->
-                                <div class="col-sm-6">
-                                    <div class="quiz_card_area">
-                                        <input class="quiz_checkbox" type="checkbox" id="1" value="1" />
-                                        <div class="single_quiz_card">
-                                            <div class="quiz_card_content">
-                                                <div class="quiz_card_title shadow-lg">
-                                                    <h3><i class="fa fa-check" aria-hidden="true"></i> Prod 15
-                                                    </h3>
-                                                </div>
+                                A compléter
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- produit 4 -->
-                                <div class="col-sm-6">
-                                    <div class="quiz_card_area">
-                                        <input class="quiz_checkbox" type="checkbox" id="1" value="1" />
-                                        <div class="single_quiz_card">
-                                            <div class="quiz_card_content">
-                                                <div class="quiz_card_title shadow-lg">
-                                                    <h3><i class="fa fa-check" aria-hidden="true"></i> Prod 16
-                                                    </h3>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -390,7 +235,8 @@
                                 <section class="row py-4 ">
                                     <div class="col-12">
                                         <form action="">
-                                            <label for="email" class="form-label">Entrez votre email pour garder votre
+                                            <label for="email" class="form-label">Entrez votre email pour garder
+                                                votre
                                                 estimation</label>
                                             <input type="email" name="email" id="email" class="form-control"
                                                 placeholder="Votre email">
@@ -401,11 +247,11 @@
                                     </div>
 
                                     <div class="col-6 text-center">
-                                        <button id="vider" class="btn btn-primary"
-                                            onclick="return show('page1','page3');">Recommencer</button>
+                                        <button id="vider" class="btn btn-primary" ">Recommencer</button>
                                     </div>
-                                    <div class="col-6 text-center">
-                                        <button id="contact" class="btn btn-secondary">Nous contacter</button>
+                                    <div class=" col-6 text-center">
+                                            <a href="contact.html" id="contact" class="btn btn-secondary">Nous
+                                                contacter</a>
                                     </div>
                                 </section>
 
@@ -423,7 +269,7 @@
             <div class="overlay-mf"></div>
             <div class="container position-relative">
                 <div class="row">
-                    <div class="col-sm-3 col-lg-3">
+                    <div class="col-3">
                         <div class="counter-box counter-box pt-4 pt-md-0">
                             <div class="counter-ico">
                                 <span class="ico-circle"><i class="bi bi-check"></i></span>
@@ -434,7 +280,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-lg-3">
+                    <div class="col-3">
                         <div class="counter-box pt-4 pt-md-0">
                             <div class="counter-ico">
                                 <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
@@ -445,7 +291,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-lg-3">
+                    <div class="col-3">
                         <div class="counter-box pt-4 pt-md-0">
                             <div class="counter-ico">
                                 <span class="ico-circle"><i class="bi bi-people"></i></span>
@@ -456,7 +302,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-lg-3">
+                    <div class="col-3">
                         <div class="counter-box pt-4 pt-md-0">
                             <div class="counter-ico">
                                 <span class="ico-circle"><i class="bi bi-award"></i></span>
