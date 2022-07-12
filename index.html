@@ -81,7 +81,7 @@
 
 
         <!-- ======= Calculator Section ======= -->
-        <section id="calculator" class="calc-mf sect-pt4 route">
+        <section id="calculator" class="calc-mf sect-pt4 route mx-1">
             <div class="container">
                 <div class="row">
                     <!-- description of the calculator -->
@@ -89,12 +89,13 @@
                         <h3 class="title-a">
                             Simuler mon Projet Web
                         </h3>
-                        <p class="subtitle-a">
-                        <ol>
-                            <li>Choisissez parmi les 4 services que nous proposons</li>
-                            <li>Choisissez les produits dont vous avez besoin</li>
-                            <li>Consultez votre estimation</li>
-                        </ol>
+                        <p class="subtitle-a text-start">
+                        <ul class="nav flex-column">
+                            <li>1. Choisissez parmi les 4 services que nous proposons</li>
+                            <li>2. Choisissez les produits dont vous avez besoin</li>
+                            <li>3. Consultez votre estimation</li>
+                            <li>4. Enregistrez votre estimation</li>
+                        </ul>
                         </p>
                         <div class="line-mf"></div>
                     </div>
@@ -117,7 +118,7 @@
                     <!-- end of the side menu for calculator -->
                     <!-- products side -->
                     <div class="col-9 ">
-                        <div class="container">
+                        <div class="ms-1">
                             <h4 class="mb-1">2. Produits afférents.</h4>
 
                             <!-- First service Project -->
@@ -129,7 +130,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="row ">
-                                            <label for="static" class="pr-1 col-8">
+                                            <label for="static" class=" col-8">
                                                 <input class="checkbox stretched-link" type="checkbox" id="static"
                                                     value="static" name="Static" /> Static web site
                                             </label>
@@ -233,47 +234,45 @@
                     </div>
 
                     <!-- cart -->
-                    <div id="Panier" class=" tab shadow-lg border-0 p-2 my-3">
-                        <h4 class="mb-4 ">3. Votre estimation</h4>
-                        <section class="row py-1">
-                            <div class="col-12 col-md-6">
-                                <div class="row">
-                                    <h4 class="mb-4 col-4 col-md-12">Vos choix</h4>
-                                    <p id="listing" class=" col-8 col-md-12"></p>
+                    <div id="Panier" class="container tab shadow-lg border-0 p-2 p-lg-5 my-3">
+
+
+                        <div class="row px-1">
+                            <h4 class="mb-4 ">3. Votre estimation</h4>
+                            <p id="listing"></p>
+                        </div>
+                        <div class="row">
+                            <h4 class=" mb-4 col-8">Montant estimé (en euros)</h4>
+                            <p id="prixTotal" class="text-md-center display-6 col-4"></p>
+                        </div>
+
+
+                        <section class="row py-4 px-1 ">
+                            <h4 class="mb-4 ">4. Enregistrer votre estimation</h4>
+                            <div class="col-12">
+                                <form action="">
+                                    <label for="email" class="form-label">Entrez votre email pour garder
+                                        votre
+                                        estimation</label>
+                                    <input type="email" name="email" id="email" class="form-control"
+                                        placeholder="Votre email">
+                                    <a href="" id="recevoir" class="btn btn-primary text-light my-2 d-block">Recevoir
+                                        l'estimation</a>
+                                </form>
+                            </div>
+                            <div class="row justify-content-between">
+                                <div class="col-6 d-flex">
+                                    <a href="#calculator" class="btn btn-primary" id="vider">Réinitialiser</a>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end">
+                                    <a href="contact.html" id="contact" class="btn btn-secondary">Nous
+                                        contacter</a>
                                 </div>
                             </div>
-
-                            <div class="col-12 col-md-6">
-                                <div class="row">
-                                    <h4 class="text-md-center mb-4 col-8 col-md-12">Votre estimation</h4>
-                                    <p id="prixTotal" class="text-md-center display-6 col-4 col-md-12"></p>
-                                </div>
-                            </div>
-
-                            <section class="row py-4 ">
-                                <div class="col-12">
-                                    <form action="">
-                                        <label for="email" class="form-label">Entrez votre email pour garder
-                                            votre
-                                            estimation</label>
-                                        <input type="email" name="email" id="email" class="form-control"
-                                            placeholder="Votre email">
-                                        <a href="" id="recevoir"
-                                            class="btn btn-primary text-light my-2 d-block">Recevoir
-                                            l'estimation</a>
-                                    </form>
-                                </div>
-
-                                <div class="col-6 text-center">
-                                    <button id="vider" class="btn btn-primary" ">Recommencer</button>
-                                </div>
-                                <div class=" col-6 text-center">
-                                        <a href="contact.html" id="contact" class="btn btn-secondary">Nous
-                                            contacter</a>
-                                </div>
-                            </section>
 
                         </section>
+
+
                     </div>
                     <!-- end of cart -->
                 </div>
