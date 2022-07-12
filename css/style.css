@@ -459,7 +459,7 @@ a:hover {
   color: #fff;
 }
 #header .logo img {
-  max-height: 40px;
+  max-height: 4rem;
 }
 #header.header-scrolled {
   background: rgba(0, 60, 120, 0.95);
@@ -586,7 +586,7 @@ a:hover {
 */
 .mobile-nav-toggle {
   color: #fff;
-  font-size: 28px;
+  font-size: 3rem;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -751,18 +751,13 @@ a:hover {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about-mf .box-shadow-full {
+.calc-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-.about-mf .about-img img {
-  margin-left: 10px;
-}
+
 @media (min-width: 767px) {
-  .about-mf .box-pl2 {
+  .calc-mf .box-pl2 {
     margin-top: 3rem;
     padding-left: 0rem;
   }

@@ -31,11 +31,11 @@
         <div class="container d-flex align-items-center justify-content-between">
 
             <!-- <h1 class="logo"><a href="index.html">WOB</a></h1> -->
-            <a href="index.html" class="logo"><img src="images/apple-touch-icon.png" alt="" class="img-fluid"></a>
+            <a href="index.html" class="logo"><img src="images/logo-noir.png" alt="" class="img-fluid"></a>
 
             <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto" href="#hero">Home</a></li>
+                <ul class="text-end">
+                    <!-- <li><a class="nav-link scrollto" href="#hero">Home</a></li> -->
                     <li class="dropdown"><a href="services.html"><span>Services</span> <i
                                 class="bi bi-chevron-down"></i></a>
                         <ul>
@@ -64,11 +64,13 @@
                 <div class="container">
                     <!--<p class="display-6 color-d">Hello, world!</p>-->
                     <h1 class="hero-title mb-4">Webcome on Board</h1>
-                    <p class="hero-subtitle">Une Agence Web au Pays Basque</p>
+                    <p class="hero-subtitle">Agence Web au Pays Basque</p>
 
-                    <p class="pt-3"><a class="btn btn-primary btn-lg js-scroll px-4" href="#about" role="button">Estimer
+                    <p class="pt-3"><a class="btn btn-primary btn-lg js-scroll px-4" href="#calculator"
+                            role="button">Estimer
                             le Coût de Votre Projet</a></p>
-                    <p class="pt-3"><a class="btn btn-primary btn-lg js-scroll px-4" href="#about" role="button">Nous
+                    <p class="pt-3"><a class="btn btn-primary btn-lg js-scroll px-4" href="contact.html"
+                            role="button">Nous
                             Contacter</a></p>
                 </div>
             </div>
@@ -79,200 +81,204 @@
 
 
         <!-- ======= Calculator Section ======= -->
-        <section id="about" class="about-mf sect-pt4 route">
+        <section id="calculator" class="calc-mf sect-pt4 route">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <!-- description of the calculator -->
-                                <div class="title-box text-center">
-                                    <h3 class="title-a">
-                                        Simuler mon Projet Web
-                                    </h3>
-                                    <p class="subtitle-a">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque in facilis
-                                        delectus consequatur repudiandae commodi similique alias laborum culpa,
-                                        deserunt, molestias distinctio praesentium enim sapiente consectetur tenetur
-                                        molestiae officia obcaecati rerum quae necessitatibus ea qui voluptatem?
-                                        Perspiciatis non harum accusantium!
-                                    </p>
-                                    <div class="line-mf"></div>
-                                </div>
-                                <!-- end of the descriptive part of the calculator -->
-                            </div>
-                        </div>
+                    <!-- description of the calculator -->
+                    <div class="title-box text-center col-12">
+                        <h3 class="title-a">
+                            Simuler mon Projet Web
+                        </h3>
+                        <p class="subtitle-a">
+                        <ol>
+                            <li>Choisissez parmi les 4 services que nous proposons</li>
+                            <li>Choisissez les produits dont vous avez besoin</li>
+                            <li>Consultez votre estimation</li>
+                        </ol>
+                        </p>
+                        <div class="line-mf"></div>
+                    </div>
+                    <!-- end of the descriptive part of the calculator -->
 
-                        <!-- side menu for calculator -->
-                        <div class="tab shadow-lg border-0">
-                            <button class="tablinks" onclick="openPage(event, 'Projet')" id="defaultOpen"
-                                style="font-size: 1rem ;">Gestion
-                                de
-                                Projet </button>
-                            <button class="tablinks" onclick="openPage(event, 'Design')" style="font-size: 1rem ;">Web
-                                Design</button>
-                            <button class="tablinks" onclick="openPage(event, 'Sites')"
-                                style="font-size: 1rem ;">Création Sites</button>
-                            <button class="tablinks" onclick="openPage(event, 'Pub')"
-                                style="font-size: 1rem ;">E-Publicité</button>
-                            <button class="tablinks" onclick="openPage(event, 'Panier')"
-                                style="font-size: 1rem ;">Panier</button>
-                        </div>
-                        <!-- end of the side menu for calculator -->
 
-                        <!-- First service Project -->
-                        <div id="Projet" class="tabcontent p-4 border-0">
-                            <!-- <p>Gestion de Projet: Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> -->
-                            <div class="row">
+                    <!-- side menu for calculator -->
+                    <div class="tab shadow-lg border-0 col-3">
+                        <h4 class="mb-4 ">1. Nos Services</h4>
+                        <button class="tablinks border-bottom" onclick="openPage(event, 'Projet')"
+                            id="defaultOpen">Gestion
+                            de
+                            Projet </button>
+                        <button class="tablinks border-bottom" onclick="openPage(event, 'Design')">Web
+                            Design</button>
+                        <button class="tablinks border-bottom" onclick="openPage(event, 'Sites')">Création
+                            Sites</button>
+                        <button class="tablinks border-bottom" onclick="openPage(event, 'Pub')">E-Publicité</button>
+                    </div>
+                    <!-- end of the side menu for calculator -->
+                    <!-- products side -->
+                    <div class="col-9 ">
+                        <div class="container">
+                            <h4 class="mb-1">2. Produits afférents.</h4>
+
+                            <!-- First service Project -->
+                            <div id="Projet" class="tabcontent py-4">
+                                <!-- <p>Gestion de Projet: Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> -->
+
                                 <!-- first product -->
-                                <div class="col-md-6">
-                                    <div class="row px-1 my-1 my-md-4">
-                                        <div class="card py-3 py-md-4 col-8 col-md-12">
-                                            <input class="checkbox stretched-link" type="checkbox" id="static"
-                                                value="static" name="Static" />
-                                            <label for="static" class="text-center pt-1">
-                                                Static web site
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row ">
+                                            <label for="static" class="pr-1 col-8">
+                                                <input class="checkbox stretched-link" type="checkbox" id="static"
+                                                    value="static" name="Static" /> Static web site
                                             </label>
+                                            <div class="col-4 text-end">2000 €</div>
+                                            <!-- <p class="pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae,
+                                            sit!</p> -->
                                         </div>
-                                        <p class="text-center stretched-link col-4 col-md-12 my-auto"><a
-                                                href="blog-single.html"
-                                                style="text-decoration:underline; cursor: pointer">En
-                                                savoir plus</a>
-                                        </p>
                                     </div>
                                 </div>
+
+                                <small class="text-muted  p-1"> <a href="blog-single.html">En savoir plus</a>
+                                </small>
+
+
                                 <!-- end of first product -->
                                 <!-- second product -->
-                                <div class="col-md-6">
-                                    <div class="row px-1 my-1 my-md-4">
-                                        <div class="card py-3 py-md-4 col-8 col-md-12">
-                                            <input class="checkbox stretched-link" type="checkbox" id="specific"
-                                                value="specific" name="specific" />
-                                            <label for="specific" class="text-center pt-1">
-                                                Specific Deployment
+                                <div class="card mt-4">
+                                    <div class="card-body">
+                                        <div class="row ">
+                                            <label for="specific" class="pr-1 col-8">
+                                                <input class="checkbox stretched-link" type="checkbox" id="specific"
+                                                    value="specific" name="specific" /> Specific Deployment
                                             </label>
+                                            <div class="col-4 text-end">3000 €</div>
+                                            <!-- <p class="pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae,
+                                            sit!</p> -->
                                         </div>
-                                        <p class="text-center stretched-link col-4 col-md-12 my-auto"><a
-                                                href="blog-single.html"
-                                                style="text-decoration:underline; cursor: pointer">En
-                                                savoir plus</a>
-                                        </p>
                                     </div>
                                 </div>
+
+                                <small class="text-muted  p-1"> <a href="blog-single.html">En savoir plus</a>
+                                </small>
                                 <!-- end of second product -->
                                 <!-- third product -->
-                                <div class="col-md-6">
-                                    <div class="row px-1 my-1 my-md-4">
-                                        <div class="card py-3 py-md-4 col-8 col-md-12">
-                                            <input class="checkbox stretched-link" type="checkbox" id="audit"
-                                                value="audit" name="audit" />
-                                            <label for="audit" class="text-center pt-1">
-                                                Audit of existing website
+                                <div class="card mt-4">
+                                    <div class="card-body">
+                                        <div class="row ">
+                                            <label for="audit" class="pr-1 col-8">
+                                                <input class="checkbox stretched-link" type="checkbox" id="audit"
+                                                    value="audit" name="audit" /> Audit of web site
                                             </label>
+                                            <div class="col-4 text-end">4000 €</div>
+                                            <!-- <p class="pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae,
+                                            sit!</p> -->
                                         </div>
-                                        <p class="text-center stretched-link col-4 col-md-12 my-auto"><a
-                                                href="blog-single.html"
-                                                style="text-decoration:underline; cursor: pointer">En
-                                                savoir plus</a>
-                                        </p>
                                     </div>
                                 </div>
+
+                                <small class="text-muted  p-1"> <a href="blog-single.html">En savoir plus</a>
+                                </small>
                                 <!-- end of third product -->
                                 <!-- fourth product -->
-                                <div class="col-md-6">
-                                    <div class="row px-1 my-1 my-md-4">
-                                        <div class="card py-3 py-md-4 col-8 col-md-12">
-                                            <input class="checkbox stretched-link" type="checkbox" id="wordpress"
-                                                value="wordpress" name="wordpress" />
-                                            <label for="wordpress" class="text-center pt-1">
-                                                Wordpress website
+                                <div class="card mt-4">
+                                    <div class="card-body">
+                                        <div class="row ">
+                                            <label for="wordpress" class="pr-1 col-8">
+                                                <input class="checkbox stretched-link" type="checkbox" id="wordpress"
+                                                    value="wordpress" name="wordpress" /> Wordpress web site
                                             </label>
+                                            <div class="col-4 text-end">5000 €</div>
+                                            <!-- <p class="pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae,
+                                            sit!</p> -->
                                         </div>
-                                        <p class="text-center stretched-link col-4 col-md-12 my-auto"><a
-                                                href="blog-single.html"
-                                                style="text-decoration:underline; cursor: pointer">En
-                                                savoir plus</a>
-                                        </p>
                                     </div>
                                 </div>
+
+                                <small class="text-muted  p-1"> <a href="blog-single.html">En savoir plus</a>
+                                </small>
                                 <!-- end of fourth product -->
-                            </div>
-                        </div>
-                        <!-- end of first service Project Design -->
-                        <!-- second service -->
-                        <div id="Design" class="tabcontent p-4 border-0">
-                            <p>Web Design: Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                            <div class="row">
-                                A compléter
 
                             </div>
-                        </div>
-                        <!-- end of second service -->
-                        <!-- third service -->
-                        <div id="Sites" class="tabcontent p-4 border-0">
-                            <p>Création de Sites: Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                            <div class="row">
-                                A compléter
+                            <!-- end of first service Project Design -->
+                            <!-- second service -->
+                            <div id="Design" class="tabcontent p-4 border-0">
+                                <p>Web Design: Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                <div class="row">
+                                    A compléter
 
-                            </div>
-                        </div>
-                        <!-- end of third service -->
-                        <!-- fourth service -->
-                        <div id="Pub" class="tabcontent p-4 border-0">
-                            <p>E-publicité: Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                            <div class="row">
-                                A compléter
-
-                            </div>
-                        </div>
-                        <!-- end of fourth service -->
-                        <!-- cart -->
-                        <div id="Panier" class="tabcontent p-4 border-0">
-                            <section class="row py-1">
-                                <div class="col-12 col-md-6">
-                                    <div class="row">
-                                        <h4 class="mb-4 col-4 col-md-12">Vos choix</h4>
-                                        <p id="listing" class=" col-8 col-md-12"></p>
-                                    </div>
                                 </div>
+                            </div>
+                            <!-- end of second service -->
+                            <!-- third service -->
+                            <div id="Sites" class="tabcontent p-4 border-0">
+                                <p>Création de Sites: Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                <div class="row">
+                                    A compléter
 
-                                <div class="col-12 col-md-6">
-                                    <div class="row">
-                                        <h4 class="text-md-center mb-4 col-8 col-md-12">Votre estimation</h4>
-                                        <p id="prixTotal" class="text-md-center display-6 col-4 col-md-12"></p>
-                                    </div>
                                 </div>
+                            </div>
+                            <!-- end of third service -->
+                            <!-- fourth service -->
+                            <div id="Pub" class="tabcontent p-4 border-0">
+                                <p>E-publicité: Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                <div class="row">
+                                    A compléter
 
-                                <section class="row py-4 ">
-                                    <div class="col-12">
-                                        <form action="">
-                                            <label for="email" class="form-label">Entrez votre email pour garder
-                                                votre
-                                                estimation</label>
-                                            <input type="email" name="email" id="email" class="form-control"
-                                                placeholder="Votre email">
-                                            <a href="" id="recevoir"
-                                                class="btn btn-primary text-light my-2 d-block">Recevoir
-                                                l'estimation</a>
-                                        </form>
-                                    </div>
-
-                                    <div class="col-6 text-center">
-                                        <button id="vider" class="btn btn-primary" ">Recommencer</button>
-                                    </div>
-                                    <div class=" col-6 text-center">
-                                            <a href="contact.html" id="contact" class="btn btn-secondary">Nous
-                                                contacter</a>
-                                    </div>
-                                </section>
-
-                            </section>
+                                </div>
+                            </div>
+                            <!-- end of fourth service -->
                         </div>
-                        <!-- end of cart -->
                     </div>
+
+                    <!-- cart -->
+                    <div id="Panier" class=" tab shadow-lg border-0 p-2 my-3">
+                        <h4 class="mb-4 ">3. Votre estimation</h4>
+                        <section class="row py-1">
+                            <div class="col-12 col-md-6">
+                                <div class="row">
+                                    <h4 class="mb-4 col-4 col-md-12">Vos choix</h4>
+                                    <p id="listing" class=" col-8 col-md-12"></p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="row">
+                                    <h4 class="text-md-center mb-4 col-8 col-md-12">Votre estimation</h4>
+                                    <p id="prixTotal" class="text-md-center display-6 col-4 col-md-12"></p>
+                                </div>
+                            </div>
+
+                            <section class="row py-4 ">
+                                <div class="col-12">
+                                    <form action="">
+                                        <label for="email" class="form-label">Entrez votre email pour garder
+                                            votre
+                                            estimation</label>
+                                        <input type="email" name="email" id="email" class="form-control"
+                                            placeholder="Votre email">
+                                        <a href="" id="recevoir"
+                                            class="btn btn-primary text-light my-2 d-block">Recevoir
+                                            l'estimation</a>
+                                    </form>
+                                </div>
+
+                                <div class="col-6 text-center">
+                                    <button id="vider" class="btn btn-primary" ">Recommencer</button>
+                                </div>
+                                <div class=" col-6 text-center">
+                                        <a href="contact.html" id="contact" class="btn btn-secondary">Nous
+                                            contacter</a>
+                                </div>
+                            </section>
+
+                        </section>
+                    </div>
+                    <!-- end of cart -->
                 </div>
             </div>
-        </section><!-- End About Section -->
+        </section><!-- End Calculator Section -->
 
 
         <!-- ======= Reassurance Section ======= -->
@@ -571,7 +577,8 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="copyright-box">
-                        <p class="copyright">&copy; Copyright <strong>WebcomeOnBoard and startBootstrap.com</strong>.
+                        <p class="copyright">&copy; Copyright <strong>WebcomeOnBoard and special thanks to <a
+                                    href="https://bootstrapmade.com/">Bootstrapmade.com</a></strong>.
                         </p>
                     </div>
                 </div>
