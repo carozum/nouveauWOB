@@ -36,14 +36,14 @@
             <nav id="navbar" class="navbar">
                 <ul class="text-end">
                     <!-- <li><a class="nav-link scrollto" href="#hero">Home</a></li> -->
-                    <li class="dropdown"><a href="services.html"><span>Services</span> <i
+                    <li class="dropdown"><a href="index.html#services"><span>Services</span> <i
                                 class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="services.html">Tous les services</a></li>
-                            <li><a href="single-produit.html">Gestion de Projet</a></li>
-                            <li><a href="single-produit.html">Web Design</a></li>
+                            <li><a href="index.html#services">Tous les services</a></li>
+                            <li><a href="single-service.html">Gestion de Projet</a></li>
+                            <li><a href="single-service.html">Web Design</a></li>
                             <li><a href="single-produit.html">Création de Sites</a></li>
-                            <li><a href="single-produit.html">E-Publicité</a></li>
+                            <li><a href="single-service.html">E-Publicité</a></li>
                         </ul>
                     </li>
                     <li><a class="nav-link scrollto " href="blog.html">Blog</a></li>
@@ -105,7 +105,7 @@
 
                     <!-- side menu for calculator -->
                     <div class="tab shadow-lg border-0 col-4 col-md-3">
-                        <h4 class="mb-4 ">1. Nos Services</h4>
+                        <h4 class="mb-4 ">1. choisir la catégorie</h4>
                         <button class="tablinks border-bottom" onclick="openPage(event, 'Projet')"
                             id="defaultOpen">Gestion
                             de
@@ -115,91 +115,106 @@
                         <button class="tablinks border-bottom" onclick="openPage(event, 'Sites')">Création
                             Sites</button>
                         <button class="tablinks border-bottom" onclick="openPage(event, 'Pub')">E-Publicité</button>
+                        <h4 class=" ps-2 pt-5">3. Total en €</h4>
+                        <p id="prixTotal" class="text-center fs-3"></p>
                     </div>
                     <!-- end of the side menu for calculator -->
                     <!-- products side -->
                     <div class="col-8 col-md-9 ">
                         <div class="ms-1">
-                            <h4 class="mb-1">2. Produits afférents.</h4>
+                            <h4 class="mb-1">2. Sélectionner des besoins</h4>
 
                             <!-- First service Project -->
                             <div id="Projet" class="tabcontent py-4">
                                 <!-- <p>Gestion de Projet: Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> -->
 
                                 <!-- first product -->
-
                                 <div class="card">
-                                    <div class="card-body">
-                                        <div class="row ">
-                                            <label for="static" class=" col-8">
-                                                <input class="checkbox stretched-link" type="checkbox" id="static"
-                                                    value="static" name="Static" /> Static web site
-                                            </label>
-                                            <div class="col-4 text-end">2000 €</div>
-                                            <!-- <p class="pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae,
-                                            sit!</p> -->
+                                    <div class="work-content">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <input class="checkbox" type="checkbox" id="static" value="static"
+                                                    name="Static" />
+                                                <label for="static">
+                                                    Site one page
+                                                </label>
+                                            </div>
+                                            <div class="col-4">
+                                                <span class="w-date"> 2000-3000€</span>
+                                            </div>
+                                            <div class="col-2">
+                                                <a href="single-produit.html"> <span
+                                                        class="bi bi-info-circle"></span></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <small class="text-muted  p-1"> <a href="blog-single.html">En savoir plus</a>
-                                </small>
-
-
                                 <!-- end of first product -->
                                 <!-- second product -->
                                 <div class="card mt-4">
-                                    <div class="card-body">
-                                        <div class="row ">
-                                            <label for="specific" class="pr-1 col-8">
-                                                <input class="checkbox stretched-link" type="checkbox" id="specific"
-                                                    value="specific" name="specific" /> Specific Deployment
-                                            </label>
-                                            <div class="col-4 text-end">3000 €</div>
-                                            <!-- <p class="pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae,
-                                            sit!</p> -->
+                                    <div class="work-content">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <input class="checkbox" type="checkbox" id="specific" value="specific"
+                                                    name="specific" />
+                                                <label for="specific">
+                                                    Site spécifique
+                                                </label>
+                                            </div>
+                                            <div class="col-4">
+                                                <span class="w-date"> 3000-4000€</span>
+                                            </div>
+                                            <div class="col-2">
+                                                <a href="single-produit.html"> <span
+                                                        class="bi bi-info-circle"></span></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <small class="text-muted  p-1"> <a href="blog-single.html">En savoir plus</a>
-                                </small>
                                 <!-- end of second product -->
                                 <!-- third product -->
                                 <div class="card mt-4">
-                                    <div class="card-body">
-                                        <div class="row ">
-                                            <label for="audit" class="pr-1 col-8">
-                                                <input class="checkbox stretched-link" type="checkbox" id="audit"
-                                                    value="audit" name="audit" /> Audit of web site
-                                            </label>
-                                            <div class="col-4 text-end">4000 €</div>
-                                            <!-- <p class="pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae,
-                                            sit!</p> -->
+                                    <div class="work-content">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <input class="checkbox" type="checkbox" id="audit" value="audit"
+                                                    name="audit" />
+                                                <label for="audit">
+                                                    Audit de site
+                                                </label>
+                                            </div>
+                                            <div class="col-4">
+                                                <span class="w-date"> 1000-2000€</span>
+                                            </div>
+                                            <div class="col-2">
+                                                <a href="single-produit.html"> <span
+                                                        class="bi bi-info-circle"></span></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <small class="text-muted  p-1"> <a href="blog-single.html">En savoir plus</a>
-                                </small>
                                 <!-- end of third product -->
                                 <!-- fourth product -->
                                 <div class="card mt-4">
-                                    <div class="card-body">
-                                        <div class="row ">
-                                            <label for="wordpress" class="pr-1 col-8">
-                                                <input class="checkbox stretched-link" type="checkbox" id="wordpress"
-                                                    value="wordpress" name="wordpress" /> Wordpress web site
-                                            </label>
-                                            <div class="col-4 text-end">5000 €</div>
-                                            <!-- <p class="pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae,
-                                            sit!</p> -->
+                                    <div class="work-content">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <input class="checkbox" type="checkbox" id="wordpress" value="wordpress"
+                                                    name="wordpress" />
+                                                <label for="wordpress">
+                                                    Site wordpress
+                                                </label>
+                                            </div>
+                                            <div class="col-4">
+                                                <span class="w-date"> 2000-3000€</span>
+                                            </div>
+                                            <div class="col-2">
+                                                <a href="single-produit.html"> <span
+                                                        class="bi bi-info-circle"></span></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <small class="text-muted  p-1"> <a href="blog-single.html">En savoir plus</a>
-                                </small>
                                 <!-- end of fourth product -->
 
                             </div>
@@ -239,17 +254,17 @@
 
 
                         <div class="row px-1">
-                            <h4 class="mb-4 ">3. Votre estimation</h4>
+                            <h4 class="mb-4 ">4. Détails des besoins</h4>
                             <p id="listing"></p>
                         </div>
-                        <div class="row">
+                        <!-- <div class="row">
                             <h4 class=" mb-4 col-8">Montant estimé (en euros)</h4>
                             <p id="prixTotal" class="text-md-center display-6 col-4"></p>
-                        </div>
+                        </div> -->
 
 
                         <section class="row py-4 px-1 ">
-                            <h4 class="mb-4 ">4. Enregistrer votre estimation</h4>
+                            <!-- <h4 class="mb-4 ">4. Enregistrer votre estimation</h4> -->
                             <div class="col-12">
                                 <form action="">
                                     <label for="email" class="form-label">Entrez votre email pour garder

@@ -900,6 +900,10 @@ a:hover {
   color: var(--main-color);
   float: right;
 }
+#calculator .w-like a{
+  font-size: 1rem;
+  color: var(--main-color);
+}
 .work-content .w-like a {
   color: var(--main-color);
 }
